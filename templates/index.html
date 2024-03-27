@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3f9d8; /* Light green background color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007bff; /* Bootstrap primary color for headings */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #ffffff; /* White background for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #343a40; /* Dark gray color for labels */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da; /* Bootstrap form border color */
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff; /* Bootstrap primary color for buttons */
+            color: #ffffff; /* White text color for buttons */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please provide necessary input for Chat to proceed</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <!-- Input for API Key -->
+        <label for="apiKey">API Key:</label>
+        <input type="text" id="apiKey" name="apiKey" required>
+
+        <!-- Input for Text File Upload -->
+        <label for="fileUpload">Upload csv File:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

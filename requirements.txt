@@ -1,0 +1,7 @@
+langchain-community
+langchain_openai
+langchain_experimental
+dotenv
+#pandas
+tabulate
+flask
